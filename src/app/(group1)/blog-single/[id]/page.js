@@ -11,7 +11,7 @@ import BlogSlider from '@/components/section/blogSlider'
 import NextPrevPost from '@/components/ui/nextPrevPost'
 import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 import Comments from '@/components/ui/comments'
-import Leavecomment from '@/components/ui/leaveComment'
+// import Leavecomment from '@/components/ui/leaveComment'
 import SocialMediaList from '@/components/ui/socialMediaList'
 
 export const metadata = {
@@ -130,7 +130,7 @@ const BlogSingle = ({params}) => {
                     <hr className='mt-12.5 mb-17.5 max-w-[830px] w-full' />
                     {/* ------- comments */}
                     <Comments />
-                    <Leavecomment />
+                    {/* <Leavecomment /> */}
                     {/* ---------- related post */}
                     <div>
                         <h2 className='[font-size:_clamp(33px,5vw,48px)] font-bold leading-120 text-primary-foreground pb-[32px]'>Related Post</h2>
