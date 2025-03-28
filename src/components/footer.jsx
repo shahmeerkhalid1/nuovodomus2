@@ -29,7 +29,7 @@ const Footer = () => {
                                 </div>
                                 <div className='mt-[17px]'>
                                     <Link href={"tel:+34962398486"} className='text-lg block text-primary-foreground hover-underline' >Phone: <span>+34 96 239 84 86</span></Link>
-                                    <Link href={"mailto:hello@NuovoDomus.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@NuovoDomus.com</span></Link>
+                                    <Link href={"mailto:hello@nuovodomus.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@nuovodomus.com</span></Link>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                                 </div>
                                 <div className='mt-[17px]'>
                                     <Link href={"tel:+34962398486"} className='text-lg block text-primary-foreground hover-underline' >Phone: <span>+336 885 6670</span></Link>
-                                    <Link href={"mailto:hello@NuovoDomus.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@NuovoDomus.com</span></Link>
+                                    <Link href={"mailto:hello@NuovoDomus.com"} className='text-lg block text-primary-foreground hover-underline'>Email: <span>hello@nuovodomus.com</span></Link>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                     <hr className='bg-pritext-primary-foreground' />
                     <div className='py-8 lg:flex justify-between items-center'>
                         {/* <span className='text-sm text-primary-foreground block'>Made with Love by <Link href={""}>ThemePerch</Link> </span> */}
-                        <span className='text-sm text-primary-foreground block mt-3 lg:mt-0'>©2024, NuovoDomus, All Rights Reserved</span>
+                        <span className='text-sm text-primary-foreground block mt-3 lg:mt-0'>© 2025 NuovoDomus. All Rights Reserved. Designed By: <a target='_blank' href='https://www.codematics.co/' style={{textDecoration:"none",}}>Codematics Services (Private) Limited.</a></span>
                     </div>
                 </div>
             </div>

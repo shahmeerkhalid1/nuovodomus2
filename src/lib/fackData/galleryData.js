@@ -10,34 +10,34 @@ export const galleryData = [
         img_title: "Cozy Living Room",
         img_desc: "Exploring Excellence in Every Meticulous Design Detail Exploring Excellence in Every Meticulous Design Detail",
         img: img_1,
-        link: "/"
     },
     {
         id: "02",
         img_title: "Luxurious Living Room",
         img_desc: "Exploring Excellence in Every Meticulous Design Detail Exploring Excellence in Every Meticulous Design Detail",
         img: img_2,
-         link: "/"
     },
     {
         id: "03",
         img_title: "Elegant Bedroom",
         img_desc: "Exploring Excellence in Every Meticulous Design Detail Exploring Excellence in Every Meticulous Design Detail",
         img: img_3,
-         link: "/"
     },
     {
         id: "04",
         img_title: "Rustic Comfort",
         img_desc: "Exploring Excellence in Every Meticulous Design Detail Exploring Excellence in Every Meticulous Design Detail",
         img: img_4,
-         link: "/"
     },
     {
         id: "05",
         img_title: "Urban Living Space",
         img_desc: "Exploring Excellence in Every Meticulous Design Detail Exploring Excellence in Every Meticulous Design Detail",
         img: img_5,
-         link: "/"
+
     },
 ]
+// .map(project => ({
+//     ...project,
+//     link: `/project-single/${project.id}`
+// }));

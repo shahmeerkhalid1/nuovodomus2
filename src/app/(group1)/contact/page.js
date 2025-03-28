@@ -8,7 +8,8 @@ import { addressList } from '@/lib/fackData/addressList'
 import InputFiled from '@/components/ui/inputFiled'
 import TextAreaFiled from '@/components/ui/textAreaFiled'
 import RightArrow from '@/assets/icons/rightArrow'
-import from_img from "@/assets/images/contact-image.jpg"
+import from_img from "@/assets/images/houses/calliope/3.jpg"
+// import from_img from "@/assets/images/contact-image.jpg"
 import Feedback from '@/components/section/feedback'
 import ButtonOutline from '@/components/ui/buttons/buttonOutline'
 

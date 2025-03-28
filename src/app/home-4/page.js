@@ -18,8 +18,8 @@ import { productData } from '@/lib/fackData/productData'
 import { bannerFourData } from '@/lib/fackData/bannerFourData'
 
 export const metadata = {
-  title: "Architronix -- Home-4",
-  description: "Architronix is a next js and tailwind css website",
+  title: "NuovoDomus -- Home-4",
+  description: "NuovoDomus is a next js and tailwind css website",
 };
 const Home4 = () => {
   return (
@@ -35,7 +35,7 @@ const Home4 = () => {
         <div className='container-fluid '>
           <SectionTitle
             sectionName={"Team"}
-            sectionTitle={"Architects of Architronix"}
+            sectionTitle={"Architects of NuovoDomus"}
             sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
             button_text={"All Architects"}
             link={"/team"}

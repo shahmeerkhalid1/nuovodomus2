@@ -5,42 +5,44 @@ export const menuList = [
         name: "Home",
         path: "/",
         isMegaMenu: false,
-        isDropdown: [
-            {
-                id: 1,
-                name: "Home 1",
-                path: "/"
-            },
-            {
-                id: 2,
-                name: "Home 2",
-                path: "/home-2"
-            },
-            {
-                id: 3,
-                name: "Home 3",
-                path: "/home-3"
-            },
-            {
-                id: 4,
-                name: "Home 4",
-                path: "/home-4"
-            },
+        isDropdown:false,
+        // isDropdown: [
+        //     {
+        //         id: 1,
+        //         name: "Home 1",
+        //         path: "/"
+        //     },
+        //     {
+        //         id: 2,
+        //         name: "Home 2",
+        //         path: "/home-2"
+        //     },
+        //     {
+        //         id: 3,
+        //         name: "Home 3",
+        //         path: "/home-3"
+        //     },
+        //     {
+        //         id: 4,
+        //         name: "Home 4",
+        //         path: "/home-4"
+        //     },
 
-        ]
+        // ]
     },
     {
         id: 2,
         name: "About",
-        path: '#',
+        path: '/about-us',
         isMegaMenu: false,
         isDropdown: false
     },
     {
         id: 3,
         name: "Services",
-        path: "#",
+        path: "/services",
         isDropdown: false,
+        // isMegaMenu:false
         isMegaMenu: [
             {
                 id: 1,
@@ -119,101 +121,41 @@ export const menuList = [
             }
         ]
     },
-    // {
-    //     id: 4,
-    //     name: "Pages",
-    //     path: "#",
-    //     isMegaMenu: false,
-    //     isDropdown: [
-    //         {
-    //             id: 1,
-    //             name: "About Us",
-    //             path: "/about-us"
-    //         },
-    //         {
-    //             id: 2,
-    //             name: "Services",
-    //             path: "/services"
-    //         },
-    //         {
-    //             id: 4,
-    //             name: "Project Single",
-    //             path: "/project-single"
-    //         },
-    //         {
-    //             id: 5,
-    //             name: "Product Archive",
-    //             path: "/product-archive"
-    //         },
-    //         {
-    //             id: 6,
-    //             name: "Product Single",
-    //             path: "/product-single"
-    //         },
-    //         {
-    //             id: 7,
-    //             name: "Career",
-    //             path: "/career"
-    //         },
-    //         {
-    //             id: 8,
-    //             name: "Job Details",
-    //             path: "/job-details"
-    //         },
-    //         {
-    //             id: 9,
-    //             name: "Team",
-    //             path: "/team"
-    //         },
-    //         {
-    //             id: 10,
-    //             name: "Team Single",
-    //             path: "/team-single"
-    //         },
-    //         {
-    //             id: 11,
-    //             name: "Contact 2",
-    //             path: "/contact-2"
-    //         },
-    //         {
-    //             id: 12,
-    //             name: "Cart",
-    //             path: "/cart"
-    //         },
-    //         {
-    //             id: 13,
-    //             name: "Checkout",
-    //             path: "/checkout"
-    //         }
-    //     ]
-    // },
+    {
+        id: 4,
+        name: "Shop",
+        path: "/product-archive",
+        isMegaMenu: false,
+        isDropdown:false
+    },
     {
         id: 5,
         name: "Blog",
-        path: "#",
+        path: "/blog-archive",
         isMegaMenu: false,
-        isDropdown: [
-            {
-                id: 1,
-                name: "Blog Archive",
-                path: "/blog-archive"
-            },
-            {
-                id: 2,
-                name: "Blog Single",
-                path: "/blog-single"
-            },
-            {
-                id: 3,
-                name: "Blog Left Sidebar",
-                path: "/blog-left-sidebar"
-            },
-            {
-                id: 4,
-                name: "Blog Right Sidebar",
-                path: "/blog-right-sidebar"
-            },
-        ]
+        isDropdown: false,
+        // isDropdown: [
+        //     {
+        //         id: 1,
+        //         name: "Blog Archive",
+        //         path: "/blog-archive"
+        //     },
+        //     {
+        //         id: 2,
+        //         name: "Blog Single",
+        //         path: "/blog-single"
+        //     },
+        //     {
+        //         id: 3,
+        //         name: "Blog Left Sidebar",
+        //         path: "/blog-left-sidebar"
+        //     },
+        //     {
+        //         id: 4,
+        //         name: "Blog Right Sidebar",
+        //         path: "/blog-right-sidebar"
+        //     },
+        // ]
     },
     {
         id: 6,

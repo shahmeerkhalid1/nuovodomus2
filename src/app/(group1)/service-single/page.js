@@ -1,14 +1,15 @@
 import Image from 'next/image'
 
-import service_img from "@/assets/images/service-paint-image.jpg"
+import service_img from "@/assets/images/houses/calliope/2.jpg"
+// import service_img from "@/assets/images/service-paint-image.jpg"
 import SectionTitle from '@/components/ui/sectionTitle'
 import Title from '@/components/ui/title'
 import ServiceSingleSidebar from '@/components/ui/serviceSingleSidebar'
 import Feedback from '@/components/section/feedback'
 
 export const metadata = {
-  title: "Architronix -- Service Single",
-  description: "Architronix is a next js and tailwind css website",
+  title: "NuovoDomus -- Service Single",
+  description: "NuovoDomus is a next js and tailwind css website",
 };
 
 
@@ -26,7 +27,7 @@ const ServiceSingle = () => {
               <div className='pt-12.5'>
                 <Title title_text={"Overview"} />
                 <p className='text-primary-foreground '>
-                  At Architronix, our Color Consultation services are designed to elevate your space through the power of color. Whether you're revamping your home, office, or commercial establishment, our expert color consultants bring a wealth of knowledge and creativity to transform your environment.
+                  At NuovoDomus, our Color Consultation services are designed to elevate your space through the power of color. Whether you're revamping your home, office, or commercial establishment, our expert color consultants bring a wealth of knowledge and creativity to transform your environment.
                 </p>
               </div>
               <div className='pt-12.5'>
@@ -76,7 +77,7 @@ const ServiceSingle = () => {
                 </ul>
               </div>
               <strong className='mt-12.5 block'>
-                Enhance your surroundings with the transformative impact of carefully chosen colors. Let Architronix bring your vision to life through our expert Color Consultation services.
+                Enhance your surroundings with the transformative impact of carefully chosen colors. Let NuovoDomus bring your vision to life through our expert Color Consultation services.
               </strong>
             </div>
             <ServiceSingleSidebar />

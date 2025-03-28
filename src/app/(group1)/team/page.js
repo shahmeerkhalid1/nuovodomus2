@@ -4,8 +4,8 @@ import SectionTitle from '@/components/ui/sectionTitle'
 import { teamData } from '@/lib/fackData/teamData'
 
 export const metadata = {
-    title: "Architronix -- Team",
-    description: "Architronix is a next js and tailwind css website",
+    title: "NuovoDomus -- Team",
+    description: "NuovoDomus is a next js and tailwind css website",
 };
 
 const Team = () => {
@@ -15,7 +15,7 @@ const Team = () => {
                 <div className='container-fluid '>
                     <SectionTitle
                         sectionName={"Team"}
-                        sectionTitle={"Architects of Architronix"}
+                        sectionTitle={"Architects of NuovoDomus"}
                         sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
                     />
                 </div>

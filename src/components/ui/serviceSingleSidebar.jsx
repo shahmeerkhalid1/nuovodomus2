@@ -26,10 +26,10 @@ const ServiceSingleSidebar = () => {
                     }
                 </ul>
             </div>
-            <div className='mt-17.5'>
+            {/* <div className='mt-17.5'>
                 <Title title_text={"Search"} />
                 <InputFiled placeholderc={"Type & Hit Enter"} type={'text'} />
-            </div>
+            </div> */}
             <div className='mt-17.5'>
                 <form action="">
                     <Title title_text={"Schedule a Call"} />

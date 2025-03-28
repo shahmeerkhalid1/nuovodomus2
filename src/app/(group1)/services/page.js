@@ -1,5 +1,5 @@
 import React from 'react'
-import section_bg from "@/assets/images/section-bg.jpg"
+import section_bg from "@/assets/images/houses/calliope/3.jpg"
 import SectionTitle from '@/components/ui/sectionTitle'
 import { servicesData } from '@/lib/fackData/servicesData'
 import ServiceCard from '@/components/ui/cards/serviceCard'
@@ -10,8 +10,8 @@ import Faq from '@/components/section/faq'
 import Feedback from '@/components/section/feedback'
 
 export const metadata = {
-  title: "Architronix -- Services",
-  description: "Architronix is a next js and tailwind css website",
+  title: "NuovoDomus -- Services",
+  description: "NuovoDomus is a next js and tailwind css website",
 };
 
 const Services = () => {

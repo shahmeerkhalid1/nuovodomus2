@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
 import SectionTitle from '../ui/sectionTitle'
-import expertise_bg from "@/assets/images/expertise.jpg"
+import expertise_bg from "@/assets/images/houses/1.webp"
 import Title from '../ui/title'
 import { cardSlideAnimation } from '@/lib/utils'
 import SectionSidebarImg from '../ui/sectionSidebarImg'
@@ -13,7 +13,7 @@ const skillList = [
     {
         id: 1,
         skill_name: "Interior Design",
-        achive: "50%"
+        achive: "94%"
     },
     {
         id: 2,

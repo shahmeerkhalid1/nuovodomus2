@@ -21,11 +21,11 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
         el: ".project-pagination",
         renderBullet: function (index, className) {
             return `
-                    <div class='opacity-0 relative h-0 translate-y-15 ${className}'>
-                        <h2 class='text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold '>${projectsData[index].project_name}</h2>
-                        <a href="/project-single" class='text-secondary-foreground mt-[30px]'>${projectsData[index].project_desc}</a>
-                    </div>
-                    `;
+                <div class="opacity-0 relative h-0 translate-y-15 ${className}">
+                    <h2 class="text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold">${projectsData[index].project_name}</h2>
+                    <a href="/project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]">${projectsData[index].project_desc}</a>
+                </div>
+            `;
         },
     };
     return (
@@ -86,7 +86,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                     }
                 </Swiper>
                 <div className='flex justify-center xl:justify-start items-center xl:items-end flex-col xl:flex-row gap-5 '>
-                    <div className={cn(`project-pagination 3xl:max-w-[673px] max-w-[500px] w-full bg-primary xl:px-10 px-7 xl:pt-25 xl:pb-[150px] py-16 relative z-[1] xl:mt-[-271px] mt-[-100px] ${bg_muted}`)}> </div>
+                    <div className={cn(`project-pagination 3xl:max-w-[673px] max-w-[520px] w-full bg-primary xl:px-10 px-7 xl:pt-25 xl:pb-[150px] py-16 relative z-[1] xl:mt-[-271px] mt-[-100px] ${bg_muted}`)}> </div>
                     <div className='flex items-end sm:gap-5 gap-2'>
                         <div onClick={() => swiperRef.current?.slidePrev()}>
                             <ButtonFill className={"rotate-180 h-[75px] w-[75px] sm:px-3 px-3 after:bg-secondary border-secondary hover:border-primary hover:bg-primary hover:text-secondary text-primary-foreground "}><RightArrow width={"35"} height={"22"} /></ButtonFill>

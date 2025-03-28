@@ -8,8 +8,8 @@ import TitleCheckout from '@/components/ui/titleCheckout'
 
 
 export const metadata = {
-    title: "Architronix -- Checkout",
-    description: "Architronix is a next js and tailwind css website",
+    title: "NuovoDomus -- Checkout",
+    description: "NuovoDomus is a next js and tailwind css website",
 };
 
 const Checkout = () => {

@@ -20,7 +20,7 @@ const ShopSlider = ({ data, text_muted, bg_muted }) => {
                     sectionName={"Shop"}
                     sectionTitle={"Design Elegance Emporium"}
                     sectionDesc={"Discover Unparalleled Luxury for Your Space"}
-                    link={"/product-single"}
+                    link={"/product-archive"}
                     button_text={"View Shop"}
                     bg_muted={bg_muted}
                     text_muted={text_muted}

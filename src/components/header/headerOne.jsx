@@ -22,7 +22,7 @@ const HeaderOne = () => {
         <div className='xl:hidden block '>
           <MobileNavbar />
         </div>
-      </header >
+      </header>
     </>
   )
 }

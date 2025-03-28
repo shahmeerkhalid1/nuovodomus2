@@ -15,8 +15,9 @@ export const blogData = [
         author:"",
         date:"14 January 24",
         tag:"Interior",
-        title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        title:"The Art of Harmonious Color Schemes in Interior Design1",
+        desc:"",
+       
     },
     {
         id:2,
@@ -24,8 +25,9 @@ export const blogData = [
         author:"",
         date:"14 January 24",
         tag:"Interior",
-        title:"Creating Timeless Elegance: Classic vs. Contemporary Styles",
-        desc:""
+        title:"Creating Timeless Elegance: Classic vs. Contemporary Styles2",
+        desc:"",
+       
     },
     {
         id:3,
@@ -34,7 +36,8 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"Maximizing Small Spaces: Tips for Cozy Apartment Living",
-        desc:""
+        desc:"",
+       
     },
     {
         id:4,
@@ -52,7 +55,8 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        desc:"",
+      
     },
     {
         id:6,
@@ -61,7 +65,8 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        desc:"",
+       
     },
     {
         id:7,
@@ -70,7 +75,8 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        desc:"",
+       
     },
     {
         id:8,
@@ -79,7 +85,8 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        desc:"",
+
     },
     {
         id:9,
@@ -88,7 +95,11 @@ export const blogData = [
         date:"14 January 24",
         tag:"Interior",
         title:"The Art of Harmonious Color Schemes in Interior Design",
-        desc:""
+        desc:"",
+      
     },
 
-]
+].map(blog => ({
+    ...blog,
+    link: `/blog-single/${blog.id}`
+}));

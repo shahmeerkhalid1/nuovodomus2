@@ -6,7 +6,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import SectionTitle from "../ui/sectionTitle"
-import faq_img from "@/assets/images/faq-image.jpg"
+import faq_img from "@/assets/images/houses/project-5-2.webp"
 import SectionSidebarImg from "../ui/sectionSidebarImg"
 
 const faqData = [

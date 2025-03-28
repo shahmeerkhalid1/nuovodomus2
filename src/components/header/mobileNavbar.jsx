@@ -42,13 +42,18 @@ const MobileNavbar = () => {
                 <div className='container-fluid '>
                     <div className='flex items-center justify-between py-4'>
                         <Link href={"/"} className='text-primary-foreground'>
-                            <Logo height={"31"} width={"219"} />
+                            {/* <Logo height={"31"} width={"219"} /> */}
+                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                          <span className={"text-primary-foreground"}> NuovoDomus </span>
+                        </h1>
                         </Link>
                         <div>
                             <nav className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${isMenuActive ? "right-0" : "sm:-right-full -right-[150%]"} top-0 z-50 py-4 px-4`}>
                                 <div className='flex justify-between items-center'>
                                     <Link href={"/"} className='text-primary-foreground'>
-                                        <Logo height={"31"} width={"219"} />
+                                    <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                          <span className={"text-primary-foreground"}> NuovoDomus </span>
+                        </h1>
                                     </Link>
                                     <div onClick={() => setIsMenuActive(false)}>
                                         <IoMdClose className='text-2xl cursor-pointer' />
@@ -112,9 +117,9 @@ const MobileNavbar = () => {
                                         })
                                     }
                                     <div className='flex items-center pt-5'>
-                                        <li className={cn(`text-primary-foreground px-6  cursor-pointer`)} onClick={() => { setOffcanvaseActive(true), setIsMenuActive(false) }}>
+                                        {/* <li className={cn(`text-primary-foreground px-6  cursor-pointer`)} onClick={() => { setOffcanvaseActive(true), setIsMenuActive(false) }}>
                                             <Search height={"24"} width={"24"} />
-                                        </li>
+                                        </li> */}
                                         <li className={cn(`text-primary-foreground pl-6 flex items-center relative cursor-pointer`)} onClick={() => { setCartActive(true), setIsMenuActive(false) }}>
                                             <ShopCart height={"24"} width={"24"} />
                                             {

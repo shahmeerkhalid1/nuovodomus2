@@ -5,8 +5,8 @@ import SectionTitle from '@/components/ui/sectionTitle'
 import { productData } from '@/lib/fackData/productData'
 
 export const metadata = {
-    title: "Architronix -- Product Archive",
-    description: "Architronix is a next js and tailwind css website",
+    title: "NuovoDomus -- Product Archive",
+    description: "NuovoDomus is a next js and tailwind css website",
 };
 
 const ProductArchive = () => {
