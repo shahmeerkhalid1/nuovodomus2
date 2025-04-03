@@ -19,7 +19,7 @@ export const metadata = {
 
 const ProjectSingle = ({ params }) => {
     // Find the project from projectsData based on params.id
-    const project = projectsData.find((p) => p.id.toString() === params.id);
+    const project = projectsData.find((p) => p.id.toString() === params.id.toString());
 
     // If project is not found, display a fallback message
     if (!project) {
@@ -30,7 +30,7 @@ const ProjectSingle = ({ params }) => {
         <>
             <section className='blog-single'>
                 <div>
-                    <Image src={bg_banner} loading='lazy' placeholder='blur' alt="img" />
+                    <Image src={bg_banner} loading='lazy' placeholder='blur' alt="img" width={"100px"} />
                     <div className='container 2sm:mt-[156px] sm:mt-30 mt-20'>
                         <div className='grid lg:grid-cols-[65%_auto] gap-[38px]'>
                             <div className='relative after:absolute sm:after:-left-12.5 after:-left-5 after:top-1/2 after:-translate-y-1/2 after:w-[1px] sm:after:h-[130%] after:h-[120%] after:bg-primary sm:ml-12.5 ml-5'>
@@ -72,10 +72,10 @@ const ProjectSingle = ({ params }) => {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid mt-30'>
-                        <div className='flex lg:flex-row flex-col gap-8'>
-                            <Image src={project_img_1} loading='lazy' placeholder='blur' width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
-                            <Image src={project_img_2} loading='lazy' placeholder='blur' width={"auto"} height={"auto"} alt='img' className='w-full h-full' />
+                    <div className='container-fluid mt-30 overflow-hidden'>
+                        <div className='flex lg:flex-row flex-col gap-6 overflow-hidden'>
+                            <Image src={project_img_1} loading='lazy' placeholder='blur' width={500}  height={500} alt='img' className='object-cover w-full h-auto max-w-full' />
+                            <Image src={project_img_2} loading='lazy' placeholder='blur' width={500} height={500}  alt='img' className='object-cover w-full h-auto max-w-full'/>
                         </div>
                     </div>
                     <Paragraph />
