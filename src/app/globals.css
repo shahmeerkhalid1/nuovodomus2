@@ -12,14 +12,15 @@ body {
   font-size: 18px;
   line-height: 160%;
   font-weight: 400;
+  color:#222044;
 }
 
 @layer base {
   :root {
     --background: #F9FFFC;
 
-    --primary: #253B2F;
-    --primary-foreground: #253B2F;
+    --primary: #222044;
+    --primary-foreground: #222044;
 
     --secondary: #D2E0D9;
     --secondary-foreground: #D2E0D9;
@@ -31,7 +32,7 @@ body {
     --secondary-rgba: rgb(210, 224, 217, 0.50);
     --overlay: rgba(0, 0, 0, 0.40);
 
-    --border: rgba(37, 59, 47, 0.20);
+    --border: rgba(34,32,68, 0.20);
 
     --radius: 8px;
   }
@@ -183,6 +184,10 @@ body {
   animation-name: clip-text;
   white-space: nowrap;
   cursor: default;
+}
+
+.banner-subheading .animate-fill-wrap{
+  white-space:wrap;
 }
 
 .animate-fill::after {

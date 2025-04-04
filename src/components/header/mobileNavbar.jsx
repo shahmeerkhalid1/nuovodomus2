@@ -43,7 +43,7 @@ const MobileNavbar = () => {
                     <div className='flex items-center justify-between py-4'>
                         <Link href={"/"} className='text-primary-foreground'>
                             {/* <Logo height={"31"} width={"219"} /> */}
-                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-6xl text-5xl leading-[100%] font-extrabold relative'>
                           <span className={"text-primary-foreground"}> NuovoDomus </span>
                         </h1>
                         </Link>
