@@ -14,12 +14,17 @@ export const metadata = {
   description: "NuovoDomus is a next js and tailwind css website",
 };
 
+const serviceHeaderContent = {
+  title:"Explore Our Design Offerings",
+  subTitle:"At NuovoDomus, we transcend traditional design paradigms to curate environments that epitomize the pinnacle of luxury and innovation. Our comprehensive suite of services is meticulously tailored to transform your vision into an extraordinary living experience"
+}
+
 const Services = () => {
   return (
     <>
       <section className='bg-cover bg-no-repeat bg-center relative z-[1] after:contents-[""] after:z-[-1] after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[#d2e0d9a6] pt-20 pb-30' style={{ backgroundImage: `url(${section_bg.src})` }}>
         <div className='container-fluid '>
-          <SectionTitle sectionName={"Services"} sectionTitle={"Explore Our Design Offerings"} sectionDesc={"Exploring Excellence in Every Meticulous Design Detail"} />
+          <SectionTitle sectionName={"Services"} sectionTitle={serviceHeaderContent.title} sectionDesc={serviceHeaderContent.subTitle} subTitleFullWidth={true}/>
         </div>
       </section>
       {/* -------- service list */}

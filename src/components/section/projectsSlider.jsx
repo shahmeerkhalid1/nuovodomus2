@@ -23,7 +23,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
             return `
                 <div class="opacity-0 relative h-0 translate-y-15 ${className}">
                     <h2 class="text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold">${projectsData[index].project_name}</h2>
-                    <a href="/project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]">${projectsData[index].project_desc}</a>
+                    <a href="project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]">${projectsData[index].project_desc}..see more</a>
                 </div>
             `;
         },
@@ -75,9 +75,9 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
                                             <h6 className='flex flex-col text-2xl font-bold leading-160 text-secondary-foreground whitespace-nowrap'>Project type:
                                                 <span className='text-lg font-normal'>{project_type}</span>
                                             </h6>
-                                            <Link href={"/project-archive"} className='4xl:block hidden'>
+                                            {/* <Link href={"/project-archive"} className='4xl:block hidden'>
                                                 <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">View Gallery</ButtonOutline>
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
                                 </SwiperSlide>

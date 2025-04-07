@@ -16,7 +16,7 @@ const Gallery = ({ text_muted, bg_muted }) => {
                 <SectionTitle
                     sectionName={"Gallery"}
                     sectionTitle={"Exploring Our Creations"}
-                    sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"}
+                    sectionDesc={"Explore our curated gallery, showcasing spaces where imagination takes flight and excellence blossoms"}
                     link={"/project-archive"}
                     button_text={"View All Projects"}
                     bg_muted={bg_muted}

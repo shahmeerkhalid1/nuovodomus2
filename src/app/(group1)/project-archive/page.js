@@ -17,12 +17,13 @@ const ProjectArchive = () => {
             <div className='lg:pt-30 2sm:pt-20 pt-14'>
                 <div className=''>
                     {
-                        projectsData.map(({ id, project_desc, project_img, project_name, project_year, project_type, location, link }) => {
+                        projectsData.map(({ id, project_desc, project_img, project_name, project_year, project_type, location, link, project_sub_desc }) => {
                             if (id % 2 === 0) {
                                 return (
                                     <ProjectCardOne
                                         key={id}
                                         project_desc={project_desc}
+                                        project_sub_desc={project_sub_desc}
                                         project_img={project_img}
                                         project_type={project_type}
                                         location={location}

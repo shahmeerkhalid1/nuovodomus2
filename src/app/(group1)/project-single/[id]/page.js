@@ -78,11 +78,11 @@ const ProjectSingle = ({ params }) => {
                             <Image src={project_img_2} loading='lazy' placeholder='blur' width={500} height={500}  alt='img' className='object-cover w-full h-auto max-w-full'/>
                         </div>
                     </div>
-                    <Paragraph />
+                    <Paragraph content={project.firstPara}/>
                     <ProjectSingleSliderOne />
-                    <Paragraph />
+                    <Paragraph content={project.secondPara}/>
                     <ProjectSingleSliderTwo />
-                    <Paragraph />
+                    <Paragraph content={project.thirdPara}/>
                 </div>
             </section>
             <TeamTwo />

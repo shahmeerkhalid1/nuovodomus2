@@ -6,7 +6,7 @@ import ButtonFill from '../buttons/buttonFill'
 import Link from 'next/link'
 import { staticBluarDataUrl } from '@/lib/staticBluarDataUrl'
 
-const ProjectCardOne = ({ order, position, project_year, project_desc, project_img, location, project_type, project_name, link, imageVariants, cardVariants }) => {
+const ProjectCardOne = ({ order, position, project_year, project_desc, project_img, location, project_type, project_name, link, imageVariants, cardVariants,project_sub_desc }) => {
     return (
         <div className='xl:max-w-[95%] w-full mx-auto relative overflow-hidden '>
             <div className='container'>
@@ -31,9 +31,10 @@ const ProjectCardOne = ({ order, position, project_year, project_desc, project_i
                         viewport={{ once: true, amount: 0 }}
                         className='lg:w-1/2 lg:mt-[187px] relative z-[1]'
                     >
-                        <div className={`bg-primary xl:px-16 px-8 xl:pt-[78px] pt-10 xl:pb-[58px] pb-7  `}>
-                            <h3 className='xl:text-5xl md:text-[40px] text-4xl font-extrabold leading-120 text-secondary-foreground pb-10'>{project_name}</h3>
+                        <div className={`bg-primary xl:px-16 px-8 xl:pt-[50px] pt-10 xl:pb-[40px] pb-7  `}>
+                            <h3 className='xl:text-5xl md:text-[40px] text-4xl font-extrabold leading-120 text-secondary-foreground pb-7'>{project_name}</h3>
                             <p className='text-secondary-foreground mb-7'>{project_desc}</p>
+                            {project_sub_desc && <p className='text-secondary-foreground mb-7'>{project_sub_desc}</p>}
                             <ul className='mb-9'>
                                 <li className='flex  items-center mb-[6px]'>
                                     <span className='inline-block font-extrabold min-w-32 text-secondary-foreground'>Year:</span>

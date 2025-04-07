@@ -1,18 +1,10 @@
 import Image from 'next/image'
-
-import service_img from "@/assets/images/houses/calliope/2.jpg"
-// import service_img from "@/assets/images/service-paint-image.jpg"
 import SectionTitle from '@/components/ui/sectionTitle'
 import Title from '@/components/ui/title'
 import ServiceSingleSidebar from '@/components/ui/serviceSingleSidebar'
 import Feedback from '@/components/section/feedback'
 
-export const metadata = {
-  title: "NuovoDomus -- Service Single",
-  description: "NuovoDomus is a next js and tailwind css website",
-};
-
-
+// Define ServiceSingle as a reusable component that accepts props
 const ServiceSingle = ({ 
   serviceImage,
   sectionName = "Services",

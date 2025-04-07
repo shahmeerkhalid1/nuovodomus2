@@ -33,7 +33,7 @@ const Contact = () => {
             {/* ------ address and map start */}
             <section>
                 <div className='container-fluid '>
-                    <SectionTitle sectionName={"Contact"} sectionTitle={"Let's Design Together"} sectionDesc={"Reach out to bring your dream spaces to life."} />
+                    <SectionTitle sectionName={"Contact"} sectionTitle={"Your Future Starts Here"} sectionDesc={"This isn’t just about buying a home. It’s about claiming the future. NuovoDomus is your invitation to experience life without limits."} />
                 </div>
                 <div className='container lg:pt-30 2sm:pt-20 pt-14'>
                     <div className='grid lg:grid-cols-[32%_auto]'>
@@ -54,7 +54,7 @@ const Contact = () => {
             {/* ------ contact form start */}
             <section>
                 <div className='container-fluid '>
-                    <SectionTitle sectionName={"Inquiry"} sectionTitle={"Have a Project in your mind?"} sectionDesc={"Write us directly"} />
+                    <SectionTitle sectionName={"Inquiry"} sectionTitle={"Are you ready to step into the next era of luxury?"} sectionDesc={"Contact us today. The future is waiting"} />
                 </div>
                 <div className='container lg:pt-30 2sm:pt-20 pt-14'>
                     <div className='grid lg:grid-cols-2 gap-5'>

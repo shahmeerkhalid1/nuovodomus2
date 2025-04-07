@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import RightArrow from '@/assets/icons/rightArrow';
 import ButtonOutline from './buttons/buttonOutline';
 
-const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_muted, link, button_text }) => {
+const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_muted, link, button_text, subTitleFullWidth }) => {
     const [scroll, setScroll] = useState(false)
     const [scrollHeight, setScrollHeight] = useState(0)
     const containerRef = useRef()
@@ -46,7 +46,7 @@ const SectionTitle = ({ sectionName, sectionTitle, sectionDesc, text_muted, bg_m
                     <h2 className={cn(`[font-size:_clamp(48px,7vw,130px)] font-extrabold leading-110 text-primary-foreground mb-5 ${text_muted}`)} dangerouslySetInnerHTML={{__html:sectionTitle}}/>
                     <span className={cn(`block w-[300px] h-[1px] bg-primary ${bg_muted}`)}></span>
                     <div className='flex md:flex-row flex-col justify-between md:items-center'>
-                        <h5 className={cn(`text-primary-foreground lg:text-[35px] sm:text-3xl text-2xl font-semibold mt-4 max-w-[690px] md:mb-0 mb-7 !leading-160 ${text_muted}`)}>{sectionDesc}</h5>
+                        <h5 className={cn(`text-primary-foreground lg:text-[35px] sm:text-3xl text-2xl font-semibold mt-4 ${subTitleFullWidth ? 'max-w-full':'max-w-[690px]'}  md:mb-0 mb-7 !leading-160 ${text_muted}`)}>{sectionDesc}</h5>
                         {
                             button_text && <Link href={link}><ButtonOutline className={cn(`2sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>{button_text} <RightArrow height={"22"} width={"35"}/> </ButtonOutline></Link>
                         }

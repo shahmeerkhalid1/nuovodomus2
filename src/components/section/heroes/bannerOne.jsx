@@ -53,7 +53,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
                 <div className="container ">
                   <div className="xl:pt-[230px] pt-[200px] pb-[250px]">
                     <div>
-                      <h1 className="xl:text-[150px] lg:text-[130px] 2sm:text-[100px] sm:text-[70px] xm:text-[3.8rem] xm:leading-[1] text-5xl leading-[100%] font-extrabold relative">
+                      {/* <h1 className="xl:text-[150px] lg:text-[130px] 2sm:text-[100px] sm:text-[70px] xm:text-[3.8rem] xm:leading-[1] text-5xl leading-[100%] font-extrabold relative">
                         <span
                           className={cn(
                             `text-primary-foreground animate-fill after:${bg_muted} ${text_muted}`
@@ -70,15 +70,19 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
                             {heading_two}
                           </text>
                         </svg>
-                      </h1>
-                      {/* <Link href={"/project-archive"} className='mt-10 inline-block'>
+                      </h1> */}
+                      <h1 className='xl:text-[200px] lg:text-[170px] 2sm:text-[130px] sm:text-[100px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                          <span className={cn(`text-primary-foreground animate-fill after:${bg_muted} ${text_muted}`)}> {heading_one} </span>
+                          <svg strokeWidth="2" className="stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation w-full 2sm:h-[200px] h-25"><text x="0%" dominantBaseline="middle" y="70%">{heading_two}</text></svg>
+                        </h1>
+                      <Link href={"/project-archive"} className='mt-10 inline-block'>
                           <ButtonFill className={cn(`after:z-[1] sm:px-10 px-4 after:left-0 after:${bg_muted} `)}> <span className='relative z-10'>Explore Our Houses</span> </ButtonFill>
-                        </Link> */}
-                        <div className='bg-primary p-2 mt-4 container banner-subheading'>
+                        </Link>
+                        {/* <div className='bg-primary p-2 mt-4 container banner-subheading'>
                         <p className={cn(`text-lg text-secondary-foreground font-normal animate-fill animate-fill-wrap `)}>
                         {sub_heading}
                       </p>
-                        </div>
+                        </div> */}
                         
                     </div>
                   </div>

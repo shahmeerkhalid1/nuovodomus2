@@ -12,17 +12,17 @@ const aboutList = [
     {
         id: "01",
         item: "Innovation Beyond Boundaries",
-        item_desc: "We thrive on challenging the norms, infusing each project with fresh, innovative perspectives that defy convention."
+        item_desc: "We don’t just build homes—we create intelligent living experiences. Our designs fuse smart automation, modular architecture, and sustainable luxury to redefine modern living"
     },
     {
         id: "02",
-        item: "Visionaries at Work",
-        item_desc: "We thrive on challenging the norms, infusing each project with fresh, innovative perspectives that defy convention."
+        item: "Visionary Craftsmanship",
+        item_desc: "Every NuovoDomus home is a masterpiece of elegance and precision. Designed for adaptability and sophistication, our residences blend cutting-edge technology with timeless aesthetics."
     },
     {
         id: "03",
-        item: "Awards and Acclaim",
-        item_desc: "We thrive on challenging the norms, infusing each project with fresh, innovative perspectives that defy convention."
+        item: "Prestige & Recognition",
+        item_desc: "Recognized globally for architectural innovation and sustainability, NuovoDomus sets the standard for luxury, exclusivity, and modern excellence."
     },
 
 ]
@@ -36,10 +36,12 @@ const AboutOne = ({ text_muted, bg_muted }) => {
             <div className='container-fluid '>
                 <SectionTitle sectionName={"About Us"} sectionTitle={"Foundations of NuovoDomus"} sectionDesc={"Crafting Architectural Masterpieces and Designing Interior Wonders"} text_muted={text_muted} bg_muted={bg_muted} />
                 <div className={cn(`bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0 ${bg_muted}`)}>
-                    <div className='container'>
+                    <div className='container py-4'>
                         <div className='flex lg:flex-row flex-col items-center gap-[50px]'>
+                        <div className='lg:basis-[40%] 2xl:basis-auto'>
                             <SectionSidebarImg img={about_img} section_name={"about-bg"} className="md:-mt-25 -mt-[470px] -mb-25"/>
-                            <ul className='lg:mt-0 mt-20 lg:pb-0 pb-10'>
+                        </div>
+                            <ul className='lg:mt-0 mt-20 lg:pb-0 pb-10 lg:basis-[60%] 2xl:basis-auto'>
                                 {
                                     aboutList.map(({ id, item, item_desc }) => {
                                         return (
