@@ -7,6 +7,9 @@ import SectionTitle from '../../ui/sectionTitle'
 import { cardSlideAnimation, cn } from '@/lib/utils'
 import { useInView } from 'react-intersection-observer'
 import SectionSidebarImg from '@/components/ui/sectionSidebarImg'
+import Link from 'next/link'
+import ButtonOutline from '@/components/ui/buttons/buttonOutline'
+import RightArrow from '@/assets/icons/rightArrow'
 
 const aboutList = [
     {
@@ -55,8 +58,20 @@ const AboutOne = ({ text_muted, bg_muted }) => {
                                         )
                                     })
                                 }
+                                {/* <Link href={"/project-archive"} className='4xl:block hidden'>
+                                                <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">View Gallery</ButtonOutline>
+                                </Link> */}
+                              <Link href={"/about-us/"}>
+                                <ButtonOutline className={cn(`ms-30 border-secondary text-secondary-foreground 2sm:px-10 px-3 after:left-0`)}>
+                                    About
+                                    <RightArrow height={"22"} width={"35"}/> 
+                                </ButtonOutline>
+                                </Link>
+                        
                             </ul>
+                             
                         </div>
+                        
                     </div>
                 </div>
             </div>

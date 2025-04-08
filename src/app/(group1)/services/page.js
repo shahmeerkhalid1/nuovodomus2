@@ -8,6 +8,7 @@ import AboutThree from '@/components/section/about/aboutThree'
 import Expertise from '@/components/section/expertise'
 import Faq from '@/components/section/faq'
 import Feedback from '@/components/section/feedback'
+import VideoPortfolio from '@/components/section/videoPortfolio'
 
 export const metadata = {
   title: "NuovoDomus -- Services",
@@ -35,9 +36,10 @@ const Services = () => {
           }
         </div>
       </div>
-      <AboutThree />
-      <Counter />
-      <Expertise />
+      <VideoPortfolio />
+      {/* <AboutThree /> */}
+      {/* <Counter /> */}
+      {/* <Expertise /> */}
       <Faq />
       <Feedback />
     </>
