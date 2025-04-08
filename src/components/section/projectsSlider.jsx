@@ -23,7 +23,7 @@ const ProjectsSlider = ({ text_muted, bg_muted }) => {
             return `
                 <div class="opacity-0 relative h-0 translate-y-15 ${className}">
                     <h2 class="text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold">${projectsData[index].project_name}</h2>
-                    <a href="project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]">${projectsData[index].project_desc}..see more</a>
+                    <a href="project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]" onClick="event.stopPropagation();">${projectsData[index].project_desc}..see more</a>
                 </div>
             `;
         },

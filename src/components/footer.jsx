@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className='grid lg:grid-cols-3 grid-cols-1 items-center pt-[100px] pb-20'>
                         <div>
                             <Link href={""} className='text-primary-foreground'>
-                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-5xl text-5xl leading-[100%] font-extrabold relative'>
                                 <span className={"text-primary-foreground"}> NuovoDomus </span>
                         </h1>
                             </Link>

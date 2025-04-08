@@ -15,13 +15,14 @@ export const galleryData = [
         id: "2",
         img_title: "Luxurious Living Room",
         img_desc: "An opulent setting that exudes grandeur, seamlessly integrating lavish aesthetics with intelligent functionality",
-        img: img_2,
+        img: img_3,
+       
     },
     {
         id: "3",
         img_title: "Elegant Bedroom",
         img_desc: "A tranquil haven designed for rest and rejuvenation, with sophisticated elements that soothe and inspire",
-        img: img_3,
+        img: img_2,
     },
     {
         id: "4",

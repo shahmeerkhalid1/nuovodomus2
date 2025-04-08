@@ -19,6 +19,7 @@ export const metadata = {
 
 const ProjectSingle = ({ params }) => {
     // Find the project from projectsData based on params.id
+    console.log(params)
     const project = projectsData.find((p) => p.id.toString() === params.id.toString());
 
     // If project is not found, display a fallback message

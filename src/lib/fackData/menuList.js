@@ -50,19 +50,19 @@ export const menuList = [
                     {
                         id: 1,
                         name: "Residential Design",
-                        path: "/service-single",
+                        path: "/services/residential-design",
                         desc: "Everything from concept to completion"
                     },
                     {
                         id: 2,
                         name: "Commercial Design",
-                        path: "/service-single",
+                        path: "/services/commercial-design",
                         desc: "Focuses on optimizing functionality and aesthetics"
                     },
                     {
                         id: 3,
                         name: "Space Planning",
-                        path: "/service-single",
+                        path: "/services/space-planning",
                         desc: "Maximize the potential of your space"
                     }
                 ]
@@ -73,19 +73,19 @@ export const menuList = [
                     {
                         id: 4,
                         name: "Color Consultation",
-                        path: "/service-single",
+                        path: "/services/color-consultation",
                         desc: "We help you choose the perfect palette"
                     },
                     {
                         id: 5,
                         name: "Project Management",
-                        path: "/service-single",
+                        path: "/services/project-management",
                         desc: "We oversee every detail for a successful project"
                     },
                     {
                         id: 6,
                         name: "Custom Furnishings",
-                        path: "/service-single",
+                        path: "/services/custom-furnishings",
                         desc: "Elevate your space with unique furnishings"
                     }
                 ]
@@ -96,13 +96,13 @@ export const menuList = [
                     {
                         id: 7,
                         name: "Concept Development",
-                        path: "/service-single",
+                        path: "/services/concept-development",
                         desc: "Develop a design concept"
                     },
                     {
                         id: 8,
                         name: "Revamps & Remodels",
-                        path: "/service-single",
+                        path: "/services/revamps-remodels",
                         desc: "Renovation and remodeling services that breathe new life"
                     }
                 ]
@@ -123,11 +123,18 @@ export const menuList = [
     },
     {
         id: 4,
-        name: "Shop",
-        path: "/product-archive",
+        name: "Smart Home",
+        path: "/smart-home-technical-figures",
         isMegaMenu: false,
         isDropdown:false
     },
+    // {
+    //     id: 4,
+    //     name: "Shop",
+    //     path: "/product-archive",
+    //     isMegaMenu: false,
+    //     isDropdown:false
+    // },
     {
         id: 5,
         name: "Blog",
