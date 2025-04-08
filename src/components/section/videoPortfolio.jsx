@@ -11,7 +11,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
     return (
         <section className='pt-20'>
             <div className='container-fluid '>
-                <SectionTitle sectionName={"Video"} sectionTitle={"Visual Design Odyssey"} sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"} bg_muted={bg_muted} text_muted={text_muted} />
+                <SectionTitle sectionName={"Video"} sectionTitle={"Autonomous Smart Home"} sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"} bg_muted={bg_muted} text_muted={text_muted} />
             </div>
             <div className='container-fluid lg:pt-30 2sm:pt-20 pt-14'>
                 <div className={cn(` relative after:contents-[""] after:absolute after:left-0 after:top-0 after:max-w-[1320px] after:w-full z-[1] after:h-full after:bg-primary ${after_bg_muted} pt-[90px] pb-[110px]`)}>
