@@ -25,7 +25,7 @@ const VideoPlay = ({ img }) => {
                     channel="youtube"
                     youtube={{ mute: 0, autoplay: 0 }}
                     isOpen={isOpen}
-                    videoId="aXk0BDEMjr0"
+                    videoId="H-aR_1FB1u8"
                     onClose={() => setOpen(false)}
                 />
 
