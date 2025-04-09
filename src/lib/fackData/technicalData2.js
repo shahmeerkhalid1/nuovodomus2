@@ -19,7 +19,7 @@ export const technicalData = [
   {
     id: 1,
     technical_figure_name: "Electricity Supply",
-    technical_figure_img: project_img_1,
+    technical_figure_img: project_img_7,
     technical_figure_table_data:[
         {
           aspect: "Solar Power Generation",

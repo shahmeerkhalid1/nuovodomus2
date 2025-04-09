@@ -120,12 +120,12 @@ const MobileNavbar = () => {
                                         {/* <li className={cn(`text-primary-foreground px-6  cursor-pointer`)} onClick={() => { setOffcanvaseActive(true), setIsMenuActive(false) }}>
                                             <Search height={"24"} width={"24"} />
                                         </li> */}
-                                        <li className={cn(`text-primary-foreground pl-6 flex items-center relative cursor-pointer`)} onClick={() => { setCartActive(true), setIsMenuActive(false) }}>
+                                        {/* <li className={cn(`text-primary-foreground pl-6 flex items-center relative cursor-pointer`)} onClick={() => { setCartActive(true), setIsMenuActive(false) }}>
                                             <ShopCart height={"24"} width={"24"} />
                                             {
                                                 products.length ? <span className='font-medium flex items-center justify-center text-secondary-foreground text-sm absolute -top-3 -right-4 w-6 h-6 bg-primary rounded-full'>{countCartProductQuantity(products)}</span> : ""
                                             }
-                                        </li>
+                                        </li> */}
                                     </div>
                                 </ul>
                             </nav>

@@ -61,12 +61,15 @@ const AboutOne = ({ text_muted, bg_muted }) => {
                                 {/* <Link href={"/project-archive"} className='4xl:block hidden'>
                                                 <ButtonOutline className="border-secondary text-secondary-foreground sm:px-10 px-3 whitespace-nowrap hover:border-primary">View Gallery</ButtonOutline>
                                 </Link> */}
-                              <Link href={"/about-us/"}>
+                              {/* <Link href={"/about-us/"}>
                                 <ButtonOutline className={cn(`ms-30 border-secondary text-secondary-foreground 2sm:px-10 px-3 after:left-0`)}>
                                     About
                                     <RightArrow height={"22"} width={"35"}/> 
                                 </ButtonOutline>
-                                </Link>
+                                </Link> */}
+                                <Link href={"/about-us/"} className='ms-30 inline-block'>
+                                    <ButtonOutline className={'border-secondary text-secondary-foreground  after:hover:bg-secondary after:left-0  z-10 hover:text-primary-foreground'}>About<RightArrow width={"35"} height={"22"} /></ButtonOutline>
+                            </Link>
                         
                             </ul>
                              

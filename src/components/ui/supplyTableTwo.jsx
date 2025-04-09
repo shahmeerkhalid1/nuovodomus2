@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SupplyTableThree = ({ data, title = "Electricity Supply" }) => {
+const SupplyTableTwo = ({ data, title = "Electricity Supply" }) => {
     const defaultData = [
         {
             aspect: "Solar Power Generation",
@@ -19,20 +19,22 @@ const SupplyTableThree = ({ data, title = "Electricity Supply" }) => {
     const tableData = data || defaultData;
 
     return (
-        <div className="w-full max-w-[600px] text-white">
-            <h2 className="text-2xl font-bold mb-4 text-center">{title}</h2>
-            <div className="border border-white/50 rounded-lg backdrop-blur-sm">
-                <div className="flex border-b border-white/50 bg-gray-800/50">
-                    <div className="w-1/3 p-3 font-bold border-r border-white/50">Aspect</div>
+        <div className="w-full text-white">
+            <h2 className="text-2xl font-bold mb-4">{title}</h2>
+            <div className="border border-white rounded-lg">
+                {/* Header Row */}
+                <div className="flex border-b border-white">
+                    <div className="w-1/3 p-3 font-bold border-r border-white">Aspect</div>
                     <div className="w-2/3 p-3 font-bold">Value/Requirement</div>
                 </div>
                 
+                {/* Data Rows */}
                 {tableData.map((item, index) => (
                     <div 
                         key={index} 
-                        className="flex border-b border-white/50 last:border-b-0 hover:bg-gray-700/50 transition-all duration-200"
+                        className="flex border-b border-white last:border-b-0"
                     >
-                        <div className="w-1/3 p-3 border-r border-white/50 font-medium">{item.aspect}</div>
+                        <div className="w-1/3 p-3 border-r border-white font-medium">{item.aspect}</div>
                         <div className="w-2/3 p-3 text-sm">{item.value}</div>
                     </div>
                 ))}
@@ -41,4 +43,4 @@ const SupplyTableThree = ({ data, title = "Electricity Supply" }) => {
     );
 };
 
-export default SupplyTableThree
+export default SupplyTableTwo

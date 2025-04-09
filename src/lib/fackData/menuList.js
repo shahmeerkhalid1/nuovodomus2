@@ -1,4 +1,4 @@
-import menu_image_1 from "@/assets/images/menu-image-1.png"
+import menu_image_1 from "@/assets/images/menu-image-2.jpg"
 export const menuList = [
     {
         id: 1,
@@ -113,7 +113,7 @@ export const menuList = [
                     {
                         id: 9,
                         name: "Embark on a Design Journey with Us",
-                        path: "#",
+                        path: "/contact/",
                         desc: "Let’s Talk",
                         img: menu_image_1
                     }
@@ -126,7 +126,18 @@ export const menuList = [
         name: "Smart Home",
         path: "/smart-home-technical-figures",
         isMegaMenu: false,
-        isDropdown:false
+         isDropdown: [
+            {
+                id: 1,
+                name: "Smart Home 2",
+                path: "/smart-home-technical-figures-2"
+            },
+            {
+                id: 1,
+                name: "Smart Home 3",
+                path: "/smart-home-technical-figures-3"
+            }
+        ]
     },
     // {
     //     id: 4,

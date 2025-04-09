@@ -21,7 +21,7 @@ const MegaMenu = ({ dropDownList, parentId }) => {
                                                     <Image src={img} alt={name} loading='lazy'  placeholder='blur' blurDataURL={staticBluarDataUrl} className='w-full h-full' />
                                                     <p className='text-secondary-foreground text-[34px] font-extrabold leading-[134%]  absolute top-6 left-6'>{name}</p>
                                                     <Link href={path} >
-                                                        <ButtonFill className="absolute  bottom-4 left-6 w-[83%] after:bg-secondary border-secondary text-primary-foreground right-0 hover:text-secondary-foreground">{desc} <RightArrow width={"35"} height={"22"} /></ButtonFill>
+                                                        <ButtonFill className="absolute  bottom-4 left-6 w-[83%] after:bg-secondary hover:bg-primary hover:border-primary border-secondary text-primary-foreground right-0 hover:text-secondary-foreground ">{desc} <RightArrow width={"35"} height={"22"} /></ButtonFill>
                                                     </Link>
                                                 </div>
                                                 :
