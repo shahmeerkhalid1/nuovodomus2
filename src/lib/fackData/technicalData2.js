@@ -15,11 +15,13 @@ import project_img_7 from "@/assets/power-supply.gif";
 // import project_img_3 from "@/assets/images/smart-home-water-supply.webp";
 // import project_img_2 from "@/assets/images/climate-control-system.webp";
 
+
 export const technicalData = [
   {
     id: 1,
     technical_figure_name: "Electricity Supply",
-    technical_figure_img: project_img_7,
+    technical_figure_video: '/videos/electric-supply.mp4',
+    technical_figure_img: project_img_1,
     technical_figure_table_data:[
         {
           aspect: "Solar Power Generation",
@@ -41,6 +43,7 @@ export const technicalData = [
     id: 2,
     technical_figure_name: "Water Supply",
     technical_figure_img: project_img_2,
+    technical_figure_video: '/videos/water-supply.mp4',
     technical_figure_table_data: [
         {
             aspect: "Daily Consumption",
@@ -64,6 +67,7 @@ export const technicalData = [
     id: 3,
     technical_figure_name: "Food Supply",
     technical_figure_img: project_img_3,
+    technical_figure_video: '/videos/food-supply.mp4',
     technical_figure_table_data: [
         {
             aspect: "Caloric Intake",
@@ -83,6 +87,7 @@ export const technicalData = [
     id: 4,
     technical_figure_name: "Air Quality and Climate Control",
     technical_figure_img: project_img_4,
+    technical_figure_video: '/videos/climate.mp4',
     technical_figure_table_data: [
         {
             aspect: "Ventilation",
@@ -102,6 +107,7 @@ export const technicalData = [
     id: 5,
     technical_figure_name: "Medical Supplies",
     technical_figure_img: project_img_5,
+    technical_figure_video: '/videos/medical-supply.mp4',
     technical_figure_table_data: [
         {
             aspect: "First Aid Kit",
@@ -121,6 +127,7 @@ export const technicalData = [
     id: 6,
     technical_figure_name: "Safety and Construction",
     technical_figure_img: project_img_6,
+    technical_figure_video: '/videos/safty.mp4',
     technical_figure_table_data: [
         {
             aspect: "Earthquake Protection",
@@ -145,7 +152,4 @@ export const technicalData = [
     ]
 }
   
-].map((project) => ({
-  ...project,
-  link: `/project-single/${project.id}`
-}));
+]

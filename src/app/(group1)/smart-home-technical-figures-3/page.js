@@ -21,11 +21,12 @@ const ProjectArchive = () => {
             <div className='lg:pt-30 2sm:pt-20 pt-14'>
                 <div className=''>
                     {
-                        technicalData.map(({ id, technical_figure_img, technical_figure_name, technical_figure_table_data }) => (
+                        technicalData.map(({ id, technical_figure_img, technical_figure_name, technical_figure_table_data,technical_figure_video }) => (
                             <TechnicalCardThree
                                 key={id}
                                 technical_figure_name={technical_figure_name}
                                 technical_figure_img={technical_figure_img}
+                                technical_figure_video={technical_figure_video}
                                 technical_figure_table_data={technical_figure_table_data}
                                 imageVariants={zoomInAnimation()}
                                 cardVariants={slideUp3DAnimation()}

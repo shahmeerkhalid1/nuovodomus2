@@ -14,7 +14,7 @@ const AboutTwo = () => {
     return (
         <section >
             <div className='container-fluid'>
-                <SectionTitle sectionName={"About Us"} sectionTitle={"Nuovodomus - Future of Luxury Living"} sectionDesc={"Welcome to NuovoDomus, where the future isn’t coming—it’s already here"}  />
+                <SectionTitle sectionName={"About"} sectionTitle={"Nuovodomus - Future of Luxury Living"} sectionDesc={"Welcome to NuovoDomus, where the future isn’t coming—it’s already here"}  />
                 {/* <SectionTitle sectionName={"About Us"} sectionTitle={"Our Artistic Journey"} sectionDesc={"Unveiling the Passion, Vision, and Expertise Behind Our Designs"} /> */}
                 <div className={`bg-primary xl:mt-[220px] lg:mt-25 md:mt-44 mt-[540px] xl:mb-20 mb-0`}>
                     <div className='container'>
