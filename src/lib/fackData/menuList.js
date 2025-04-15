@@ -5,30 +5,14 @@ export const menuList = [
         name: "Home",
         path: "/",
         isMegaMenu: false,
-        isDropdown:false,
-        // isDropdown: [
-        //     {
-        //         id: 1,
-        //         name: "Home 1",
-        //         path: "/"
-        //     },
-        //     {
-        //         id: 2,
-        //         name: "Home 2",
-        //         path: "/home-2"
-        //     },
-        //     {
-        //         id: 3,
-        //         name: "Home 3",
-        //         path: "/home-3"
-        //     },
-        //     {
-        //         id: 4,
-        //         name: "Home 4",
-        //         path: "/home-4"
-        //     },
-
-        // ]
+        // isDropdown:false,
+        isDropdown: [
+            {
+                id: 1,
+                name: "Home 2",
+                path: "/home-2"
+            },
+        ]
     },
     {
         id: 2,

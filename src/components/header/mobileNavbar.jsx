@@ -61,9 +61,9 @@ const MobileNavbar = () => {
                                 </div>
                                 <ul className='mt-7'>
                                     {
-                                        menuList.map(({ id, isDropdown, name, path, isMegaMenu }, parentItem) => {
+                                        menuList.map(({ id, isDropdown, name, path, isMegaMenu }, parentItem,index) => {
                                             return (
-                                                <li key={id} onClick={(e) => handleDropDown(e, id, isDropdown, isMegaMenu)} >
+                                                <li key={`${id}${index}`} onClick={(e) => handleDropDown(e, id, isDropdown, isMegaMenu)} >
                                                     <Link href={path} data-id={id} className={`nav-link text-xl font-medium px-4 py-4 flex items-center gap-2 transition-all duration-500 text-primary-foreground ${dropDownActive === id ? "bg-primary text-secondary-foreground" : ""}`} >
                                                         {name}
                                                         {
@@ -79,9 +79,9 @@ const MobileNavbar = () => {
                                                         isDropdown &&
                                                         <ul className={`transition-all duration-500 max-h-0 overflow-hidden px-4 pb-2 ${dropDownActive === id ? "max-h-[500px] bg-primary text-secondary-foreground " : ""}`}>
                                                             {
-                                                                isDropdown.map(({ id, name, path }) => {
+                                                                isDropdown.map(({ id, name, path },index) => {
                                                                     return (
-                                                                        <li key={id} className='leading-10'>
+                                                                        <li key={`${id}${index}`} className='leading-10'>
                                                                             <Link data-id={parentItem.id} onClick={() => setIsMenuActive(false)} href={path} className='dropdown-item text-secondary-foreground text-xl font-medium  inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full '>{name}</Link>
                                                                         </li>
                                                                     )
@@ -97,9 +97,9 @@ const MobileNavbar = () => {
                                                                     return (
                                                                         <ul key={id}>
                                                                             {
-                                                                                menus.map(({ id, name, path, desc }) => {
+                                                                                menus.map(({ id, name, path, desc },index) => {
                                                                                     return (
-                                                                                        <li key={id} className='pb-5'>
+                                                                                        <li key={`${id}${index}`} className='pb-5'>
                                                                                             <Link data-id={parentItem.id} onClick={() => setIsMenuActive(false)} href={path} className='dropdown-item text-secondary-foreground text-xl font-medium inline-block relative after:transition-all after:duration-700 after:absolute after:left-0 after:bottom-0 after:contents-[""] after:w-0 after:h-[2px] after:bg-secondary after:hover:w-full '>{name}</Link>
                                                                                             <span className='block text-secondary-foreground_rgba text-sm'>{desc}</span>
                                                                                         </li>

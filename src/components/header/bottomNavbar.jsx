@@ -39,9 +39,9 @@ const BottomNavbar = ({ linkColor }) => {
                 <nav>
                     <ul className='flex items-center'>
                         {
-                            menuList.map(({ id, isDropdown, name, path, isMegaMenu }) => {
+                            menuList.map(({ id, isDropdown, name, path, isMegaMenu },index) => {
                                 return (
-                                    <li key={id} className='group'>
+                                    <li key={`${id}${index}`} className='group'>
                                         <Link href={path} data-id={id} className={cn(`nav-link text-xl font-medium px-7 py-[34px] flex items-center gap-2  group-hover:bg-primary group-hover:text-secondary-foreground ${linkColor}`)}>
                                             {name}
                                             {
