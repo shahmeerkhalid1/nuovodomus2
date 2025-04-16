@@ -5,14 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation, Autoplay } from "swiper/modules"
 import 'swiper/css';
 import SectionTitle from '../ui/sectionTitle'
-
 import RightArrow from '@/assets/icons/rightArrow';
 import { cn } from '@/lib/utils';
 import ButtonOutline from '../ui/buttons/buttonOutline';
 import ButtonFill from '../ui/buttons/buttonFill';
 import { projectsData } from '@/lib/fackData/projectsData';
-
-
 
 const ProjectsSliderTwo = ({ text_muted, bg_muted }) => {
     const swiperRef = useRef()
@@ -24,15 +21,16 @@ const ProjectsSliderTwo = ({ text_muted, bg_muted }) => {
         renderBullet: function (index, className) {
             return `
                 <div class="opacity-0 relative h-0 translate-y-15 ${className}">
-                    <h2 class="text-secondary-foreground leading-120 [font-size:_clamp(48px,8vw,82px)] font-extrabold">${projectsData[index].project_name}</h2>
-                    <a href="project-single/${projectsData[index].id}" class="text-secondary-foreground mt-[30px]" onClick="event.stopPropagation();">${projectsData[index].project_desc}..see more</a>
+                    <h2 class="text-secondary-foreground leading-120 text-[clamp(32px,4vw,64px)] whitespace-nowrap text-ellipsis font-extrabold">${projectsData[index].project_name}</h2>
+                    <a href="/project-single/${projectsData[index].id}" class="text-secondary-foreground mt-4 inline-block text-[clamp(14px,2vw,16px)]" onClick="event.stopPropagation();">${projectsData[index].project_desc.substring(0, 100)}...see more</a>
                 </div>
             `;
         },
     };
+
     return (
-        <section className='pt-20'>
-            <div className='container-fluid '>
+        <section className='pt-10 md:pt-16 lg:pt-20'>
+            <div className='container-fluid px-4 sm:px-6 lg:px-8'>
                 <SectionTitle
                     sectionName={"Projects"}
                     sectionTitle={"Creative Showcase"}
@@ -43,14 +41,14 @@ const ProjectsSliderTwo = ({ text_muted, bg_muted }) => {
                     text_muted={text_muted}
                 />
             </div>
-            <div className='container-fluid relative lg:pt-30 2sm:pt-20 pt-14'>
-
+            <div className='container-fluid px-4 sm:px-6 lg:px-8 relative pt-10 sm:pt-14 lg:pt-20'>
                 <Swiper
                     slidesPerView={1}
                     loop
                     speed={500}
                     autoplay={{
-                      delay: 4000,
+                        delay: 4000,
+                        disableOnInteraction: false,
                     }}
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper
@@ -58,43 +56,53 @@ const ProjectsSliderTwo = ({ text_muted, bg_muted }) => {
                     pagination={pagination}
                     modules={[Pagination, Navigation,Autoplay]}
                     onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+                    className="w-full"
                 >
                     {
                         projectsData.map(({ id, area, client, project_img, project_type, project_year }) => {
                             return (
                                 <SwiperSlide key={id}>
-                                    <div className='bg-cover bg-no-repeat bg-top pb-[70px] lg:pt-[758px] pt-[500px] max-w-[1550px] after:contents-[""] after:absolute after:top-0 after:right-0 after:w-full after:h-full  after:z-[1] after:max-w-[1550px] ml-auto' style={{ backgroundImage: `url(${project_img.src})` }}>
-                                        
-                                    </div>
+                                    <div 
+                                        className='bg-cover bg-no-repeat bg-center w-full h-[300px] sm:h-[400px] md:h-[500px] ' 
+                                        style={{ backgroundImage: `url(${project_img.src})` }}
+                                    />
                                 </SwiperSlide>
                             )
                         })
                     }
                 </Swiper>
-                <div className='flex items-stretch justify-center xl:justify-start  flex-col xl:flex-row gap-5 '>
-                    <div className={cn(`project-pagination 3xl:max-w-[673px] max-w-[520px] w-full bg-primary xl:px-10 px-7 xl:pt-10 xl:pb-[50px] py-16 relative z-[1] mt-[-100px] ${bg_muted}`)}> </div>
-                    <div className='flex flex-col justify-between '>
-                        <div className='flex flex-col ps-8 sm:ps-0 sm:flex-row xl:justify-end justify-center my-10 5xl:gap-20 3xl:gap-14 sm:gap-10 gap-8 max-w-[1166px]  relative z-10 lg:ml-auto '>
-                            <h6 className='flex flex-col text-2xl font-bold leading-160 text-primary-foreground whitespace-nowrap'>Clients:
-                                <span className='text-lg font-normal'>{projectsData[activeIndex].client}</span>
+                <div className='flex flex-col xl:flex-row items-stretch justify-center xl:justify-start gap-4 lg:gap-6 mt-4'>
+                    <div className={cn(`project-pagination w-full max-w-full  2xl:max-w-[800px] bg-primary px-4 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-4 relative z-[1] mt-[-20px] sm:mt-[-30px] ${bg_muted}`)}></div>
+                    <div className='flex flex-col justify-between w-full xl:w-auto'>
+                        <div className='flex flex-col sm:flex-row justify-center xl:justify-end gap-4 sm:gap-6 lg:gap-8 xl:gap-10 my-6 sm:my-8 lg:my-10 px-4 sm:px-0'>
+                            <h6 className='flex flex-col text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-primary-foreground whitespace-nowrap'>
+                                Clients:
+                                <span className='text-sm sm:text-base lg:text-lg font-normal'>{projectsData[activeIndex].client}</span>
                             </h6>
-
-                            <h6 className='sm:flex  flex-col text-2xl font-bold leading-160 text-primary-foreground '>Area:
-                                <span className='text-lg font-normal'>{projectsData[activeIndex].area}</span>
+                            <h6 className='flex flex-col text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-primary-foreground'>
+                                Area:
+                                <span className='text-sm sm:text-base lg:text-lg font-normal'>{projectsData[activeIndex].area}</span>
                             </h6>
-                            <h6 className='sm:flex  flex-col text-2xl font-bold leading-160 text-primary-foreground whitespace-nowrap '>Project year:
-                                <span className='text-lg font-normal'>{projectsData[activeIndex].project_year}</span>
+                            <h6 className='flex flex-col text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-primary kaikkk-foreground whitespace-nowrap'>
+                                Project year:
+                                <span className='text-sm sm:text-base lg:text-lg font-normal'>{projectsData[activeIndex].project_year}</span>
                             </h6>
-                            <h6 className='flex flex-col text-2xl font-bold leading-160 text-primary-foreground whitespace-nowrap'>Project type:
-                                <span className='text-lg font-normal'>{projectsData[activeIndex].project_type}</span>
+                            <h6 className='flex flex-col text-lg sm:text-xl lg:text-2xl font-bold leading-tight text-primary-foreground whitespace-nowrap'>
+                                Project type:
+                                <span className='text-sm sm:text-base lg:text-lg font-normal'>{projectsData[activeIndex].project_type}</span>
                             </h6>
                         </div>
-                        <div className='flex items-end sm:gap-5 gap-2'>
+                        <div className='flex items-end justify-center xl:justify-start gap-2 sm:gap-3 lg:gap-4 px-4 sm:px-0'>
                             <div onClick={() => swiperRef.current?.slidePrev()}>
-                                <ButtonFill className={"rotate-180 h-[75px] w-[75px] sm:px-3 px-3 after:bg-secondary border-secondary hover:border-primary hover:bg-primary hover:text-secondary text-primary-foreground "}><RightArrow width={"35"} height={"22"} /></ButtonFill>
+                                <ButtonFill className={"rotate-180 h-12 w-12 sm:h-16 sm:w-16 lg:h-[75px] lg:w-[75px] px-2 sm:px-3 after:bg-secondary border-secondary hover:border-primary hover:bg-primary hover:text-secondary text-primary-foreground"}>
+                                    <RightArrow width={"24"} height={"16"} className="sm:w-[30px] sm:h-[20px] lg:w-[35px] lg:h-[22px]" />
+                                </ButtonFill>
                             </div>
-                            <div onClick={() => swiperRef.current?.slidePrev()}>
-                                <ButtonFill className={cn(`h-[75px] hover:border-primary sm:px-10 px-3 after:left-0 after:${bg_muted}`)}>Next Project <RightArrow width={"35"} height={"22"} /></ButtonFill>
+                            <div onClick={() => swiperRef.current?.slideNext()}>
+                                <ButtonFill className={cn(`h-12 sm:h-16 lg:h-[75px] px-4 sm:px-6 lg:px-10 text-sm sm:text-base after:left-0 after:${bg_muted} hover:border-primary`)}>
+                                    Next Project 
+                                    <RightArrow width={"24"} height={"16"} className="ml-2 sm:w-[30px] sm:h-[20px] lg:w-[35px] lg:h-[22px]" />
+                                </ButtonFill>
                             </div>
                         </div>
                     </div>

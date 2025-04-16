@@ -17,7 +17,7 @@ import { productData } from '@/lib/fackData/productData'
 import { blogData } from '@/lib/fackData/blogData'
 import { teamData } from '@/lib/fackData/teamData'
 import { cardSlideAnimation } from '@/lib/utils'
-import { bannerOneData } from '@/lib/fackData/bannerOneData'
+import { bannerOneData } from '@/lib/fackData/bannerOneDataTwo'
 import BannerTwo from '@/components/section/heroes/bannerTwo'
 import BannerFour from '@/components/section/heroes/bannerFour'
 

@@ -14,7 +14,7 @@ const VideoPortfolio = ({ text_muted, bg_muted, after_bg_muted }) => {
                 <SectionTitle sectionName={"Video"} sectionTitle={"Autonomous Smart Home"} sectionDesc={"Where Imagination Takes Flight, and Excellence Blossoms"} bg_muted={bg_muted} text_muted={text_muted} />
             </div>
             <div className='container-fluid lg:pt-30 2sm:pt-20 pt-14'>
-                <div className={cn(` relative after:contents-[""] after:absolute after:left-0 after:top-0 after:max-w-[1320px] after:w-full z-[1] after:h-full after:bg-primary ${after_bg_muted} pt-[90px] pb-[110px]`)}>
+                <div className={cn(` relative after:contents-[""] after:absolute after:left-0 after:top-0 after:max-w-full after:w-full z-[1] after:h-full after:bg-primary ${after_bg_muted} pt-[90px] pb-[110px]`)}>
                     <div className='container flex lg:flex-row flex-col justify-between relative z-10 '>
                         <div className='2xl:max-w-[637px] lg:max-w-[500px] w-full'>
                             <h4 className='text-secondary-foreground text-3xl 2sm:text-4xl font-bold leading-135'>Smart Home Technical Figures</h4>

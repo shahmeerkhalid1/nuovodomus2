@@ -41,10 +41,10 @@ const GalleryTwo = ({ text_muted, bg_muted }) => {
                                 slidesPerView: 2
                             },
                             1200: {
-                                slidesPerView: 2
+                                slidesPerView: 3
                             },
                             1400: {
-                                slidesPerView: 2
+                                slidesPerView: 3
                             }
                         }}
                         pagination={pagination}
