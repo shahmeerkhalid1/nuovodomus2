@@ -61,7 +61,7 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
         autoplay={{
           delay: 4000,
         }}
-          modules={[Navigation]}
+          modules={[Navigation,Autoplay]}
           className="h-full"
         >
           {data.map(({ id, banner_img, heading_one, heading_two, sub_heading }, index) => {
