@@ -37,7 +37,7 @@ const TechnicalCardTwo = ({ imageVariants, cardVariants, technical_figure_name, 
                         style={{ perspective: '0' }} // Adds 3D perspective
                     >
                         <div 
-                            className='bg-gradient-to-t rounded-lg from-[#222044]/90 to-transparent p-6 shadow-2xl transform transition-all duration-300'
+                            className='bg-gradient-to-t rounded-lg from-[#361c70]/90 to-transparent p-6 shadow-2xl transform transition-all duration-300'
                     
                         >
                             <SupplyTableTwo 

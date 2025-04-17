@@ -63,7 +63,7 @@ const TechnicalCardThree = ({
           >
             <div
             //   className="bg-gradient-to-t from-[#222044]/90 to-transparent p-6 shadow-2xl transform transition-all duration-300 lg:transform lg:rotate-x-[15deg] lg:transform-origin-bottom"
-            className="bg-gradient-to-t from-[#222044]/100 to-[#222044]/40 lg:bg-gradient-to-t lg:from-[#222044]/90 lg:to-transparent  p-6 shadow-2xl transform transition-all duration-300 lg:transform lg:rotate-x-[15deg] lg:transform-origin-bottom rounded-lg lg:rounded-none"
+            className="bg-gradient-to-t from-[#361c70]/100 to-[#361c70]/40 lg:bg-gradient-to-t lg:from-[#361c70]/90 lg:to-transparent  p-6 shadow-2xl transform transition-all duration-300 lg:transform lg:rotate-x-[15deg] lg:transform-origin-bottom rounded-lg lg:rounded-none"
             >
               <SupplyTableThree
                 title={technical_figure_name}

@@ -12,18 +12,18 @@ body {
   font-size: 18px;
   line-height: 160%;
   font-weight: 400;
-  color:#222044;
+  color:#361c70;
 }
 
 @layer base {
   :root {
     --background: #F9FFFC;
 
-    --primary: #222044;
-    --primary-foreground: #222044;
+    --primary: #361c70;
+    --primary-foreground: #361c70;
 
-    --secondary: #AFDBF5;
-    --secondary-foreground: #D2E0D9;
+    --secondary: #d0c1e2;
+    --secondary-foreground: #d0c1e2;
 
     --muted: #32393E;
 

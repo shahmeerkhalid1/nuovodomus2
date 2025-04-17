@@ -61,7 +61,7 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
         autoplay={{
           delay: 4000,
         }}
-          modules={[Navigation,Autoplay]}
+          modules={[Navigation]}
           className="h-full"
         >
           {data.map(({ id, banner_img, heading_one, heading_two, sub_heading }, index) => {
@@ -72,7 +72,7 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
                   style={{ 
                     backgroundImage: `url(${banner_img.src})`,
                     backgroundSize: "cover", 
-                    backgroundPosition: "top"
+                    backgroundPosition: "center"
                   }}
                 ></div>
               </SwiperSlide>
@@ -83,6 +83,7 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
       
       {/* Content section with responsive primary and secondary colors, using contentHeight */}
       <div 
+      key={activeIndex}
         className="content-section flex flex-col md:flex-row"
         style={{ minHeight: `${contentHeight}px` }}
       >
@@ -94,9 +95,9 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
                 {data && data.length > 0 && (
                   <h1 className="text-2xl sm:text-3xl leading-[1.1] md:text-[2.5rem] whitespace-nowrap font-extrabold text-primary-foreground mb-0 text-center md:text-left">
                     <span className={cn(`text-secondary-foreground animate-fill animate-fill-secondary after:${bg_muted} ${text_muted}`)}>
-                      {data[activeIndex].heading_one}
+                      {data[activeIndex].heading_one}{" "}{data[activeIndex].heading_two}
                     </span>{" "}
-                    <span className="text-secondary-foreground">{data[activeIndex].heading_two}</span>
+                    {/* <span className="text-secondary-foreground">{data[activeIndex].heading_two}</span> */}
                   </h1>
                 )}
               </div>
@@ -109,7 +110,7 @@ const BannerFour = ({ data, text_muted, bg_muted }) => {
           <div className="container-fluid md:container md:px-4 xl:px-10 h-full">
             <div className="flex justify-center md:justify-end items-center h-full">
               <div className="lg:w-2/5">
-                <div className="flex items-center justify-center md:justify-end gap-2">
+                <div className="flex items-center justify-center md:justify-end gap-8">
                   {/* Custom pagination showing current and next */}
                   <div className="flex items-center justify-between lg:w-auto gap-4 sm:gap-6">
                     {/* Current slide */}

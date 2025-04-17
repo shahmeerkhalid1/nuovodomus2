@@ -9,6 +9,8 @@ import hero_1 from "@/assets/images/houses/landscape/c_3.jpg";
 import hero_2 from "@/assets/images/houses/landscape/e_1.jpg";
 import hero_3 from "@/assets/images/houses/landscape/p_1.jpg";
 import hero_4 from "@/assets/images/houses/landscape/t_1.jpg";
+import hero_5 from "@/assets/images/houses/landscape/a13.jpg";
+import hero_6 from "@/assets/images/houses/landscape/a14.jpg";
 
 export const bannerOneData = [
   {
@@ -38,5 +40,19 @@ export const bannerOneData = [
     heading_one: "Thalia",
     heading_two: "House",
     banner_img: hero_4,
+  },
+  {
+    id: 3,
+    title: "Calliope House 2",
+    heading_one: "Calliope",
+    heading_two: "House 2",
+    banner_img: hero_5,
+  },
+  {
+    id: 3,
+    title: "Calliope House 3",
+    heading_one: "Calliope",
+    heading_two: "House 3",
+    banner_img: hero_6,
   },
 ];
