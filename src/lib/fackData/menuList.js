@@ -12,6 +12,11 @@ export const menuList = [
                 name: "Home 2",
                 path: "/home-2"
             },
+            {
+                id: 1,
+                name: "Home 3",
+                path: "/home-3"
+            },
         ]
     },
     {

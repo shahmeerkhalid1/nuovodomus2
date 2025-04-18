@@ -15,6 +15,7 @@ const useStickyHeader = (linkColor) => {
 
         const scrollTop = window.scrollY;
         if (scrollTop >= 250) {
+            console.log("scrollTop >= 250")
             header?.classList.add('container-fluid', 'fixed', 'top-0', 'left-0', 'w-full', 'bg-background', 'z-20', 'animate-slideDown', 'shadow-md')
             mobileNavbar?.classList.add('container-fluid', 'fixed', 'top-0', 'left-0', 'w-full', 'bg-background', 'z-20', 'animate-slideDown')
 
