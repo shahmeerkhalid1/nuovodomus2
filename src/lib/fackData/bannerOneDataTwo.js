@@ -18,14 +18,14 @@ export const bannerOneData = [
     title: "Calliope House",
     heading_one: "Calliope",
     heading_two: "House",
-    banner_img: hero_1,
+    banner_img: hero_5,
   },
   {
     id: 2,
     title: "Erato House",
     heading_one: "Erato",
     heading_two: "House",
-    banner_img: hero_2
+    banner_img: hero_6
   },
   {
     id: 3,
@@ -46,13 +46,13 @@ export const bannerOneData = [
     title: "Calliope House 2",
     heading_one: "Calliope",
     heading_two: "House 2",
-    banner_img: hero_5,
+    banner_img: hero_1,
   },
   {
     id: 3,
     title: "Calliope House 3",
     heading_one: "Calliope",
     heading_two: "House 3",
-    banner_img: hero_6,
+    banner_img: hero_2,
   },
 ];
