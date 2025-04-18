@@ -73,7 +73,7 @@ const BannerFive = ({ data, text_muted, bg_muted }) => {
                   style={{ 
                     backgroundImage: `url(${banner_img.src})`,
                     backgroundSize: "cover", 
-                    backgroundPosition: "top"
+                    backgroundPosition: "center"
                   }}
                   
                 ></div>
