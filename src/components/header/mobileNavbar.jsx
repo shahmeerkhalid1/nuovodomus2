@@ -43,7 +43,7 @@ const MobileNavbar = () => {
                     <div className='flex items-center justify-between py-4'>
                         <Link href={"/"} className='text-primary-foreground'>
                             {/* <Logo height={"31"} width={"219"} /> */}
-                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-5xl text-5xl leading-[100%] font-extrabold relative'>
+                            <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-4xl text-5xl leading-[100%] font-extrabold relative'>
                           <span className={"text-primary-foreground"}> NuovoDomus </span>
                         </h1>
                         </Link>
@@ -51,7 +51,7 @@ const MobileNavbar = () => {
                             <nav className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${isMenuActive ? "right-0" : "sm:-right-full -right-[150%]"} top-0 z-50 py-4 px-4`}>
                                 <div className='flex justify-between items-center'>
                                     <Link href={"/"} className='text-primary-foreground'>
-                                    <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                                    <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-4xl text-5xl leading-[100%] font-extrabold relative'>
                           <span className={"text-primary-foreground"}> NuovoDomus </span>
                         </h1>
                                     </Link>
