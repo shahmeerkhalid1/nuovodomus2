@@ -41,7 +41,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
         autoplay={{
           delay: 4000,
         }}
-        modules={[Pagination, Navigation,Autoplay]}
+        modules={[Pagination, Navigation,]}
       >
         {data.map(({ id, banner_img, heading_one, heading_two,sub_heading }) => {
           return (
