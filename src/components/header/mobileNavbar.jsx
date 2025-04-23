@@ -37,7 +37,7 @@ const MobileNavbar = () => {
 
 
     return (
-        <div className='mobile-navbar'>
+        <div className='mobile-navbar relative'>
             <div className='bg-[#f9f9f9] relative overflow-x-clip px-2.5'>
                 <div className='container-fluid '>
                     <div className='flex items-center justify-between py-4'>
@@ -48,7 +48,7 @@ const MobileNavbar = () => {
                         </h1>
                         </Link>
                         <div>
-                            <nav className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${isMenuActive ? "right-0" : "sm:-right-full -right-[150%]"} top-0 z-[999] py-4 px-4`}>
+                            <nav className={`max-h-screen min-h-screen overflow-y-auto bg-[#F9FFFC] absolute transition-all duration-500 ${isMenuActive ? "right-0" : "sm:-right-full -right-[150%]"} top-0 z-50 py-4 px-4`}>
                                 <div className='flex justify-between items-center'>
                                     <Link href={"/"} className='text-primary-foreground'>
                                     <h1 className='xl:text-[40px] lg:text-[40px] 2sm:text-[40px] sm:text-[40px] xm:text-4xl text-5xl leading-[100%] font-extrabold relative'>
