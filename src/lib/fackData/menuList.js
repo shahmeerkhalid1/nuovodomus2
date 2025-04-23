@@ -122,9 +122,14 @@ export const menuList = [
                 path: "/smart-home-technical-figures-2"
             },
             {
-                id: 1,
+                id: 2,
                 name: "Smart Home 3",
                 path: "/smart-home-technical-figures-3"
+            },
+            {
+                id: 3,
+                name: "Smart Home 4",
+                path: "/smart-home-technical-figures-4"
             }
         ]
     },
