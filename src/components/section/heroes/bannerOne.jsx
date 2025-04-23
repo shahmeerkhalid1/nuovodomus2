@@ -71,7 +71,7 @@ const BannerOne = ({ data, text_muted, bg_muted }) => {
                           </text>
                         </svg>
                       </h1> */}
-                      <h1 className='xl:text-[200px] lg:text-[170px] 2sm:text-[130px] sm:text-[100px] xm:text-7xl text-5xl leading-[100%] font-extrabold relative'>
+                      <h1 className='xl:text-[200px] lg:text-[170px] 2sm:text-[120px] sm:text-[100px] xm:text-[3.5rem] text-5xl leading-[100%] font-extrabold relative'>
                           <span className={cn(`text-primary-foreground animate-fill after:${bg_muted} ${text_muted}`)}> {heading_one} </span>
                           <svg strokeWidth="2" className="stroke-primary stroke-dasharray-1000 stroke-dashoffset-1000 animate-text-line-animation w-full 2sm:h-[200px] h-25"><text x="0%" dominantBaseline="middle" y="70%">{heading_two}</text></svg>
                         </h1>
