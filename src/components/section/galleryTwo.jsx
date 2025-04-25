@@ -2,22 +2,14 @@
 import React from 'react'
 import SectionTitle from '../ui/sectionTitle'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from "swiper/modules"
+import { Autoplay, Navigation } from "swiper/modules"
 import 'swiper/css';
 
-import ProgressAndNatigation from '../ui/progressAndNatigation';
-import ServiceCard from '../ui/cards/serviceCard';
-import { servicesData } from '@/lib/fackData/servicesData';
+import ProgressAndNavigationTwo from '../ui/progressAndNatigationTwo';
 import { galleryData } from '@/lib/fackData/galleryData';
 import GalleryCard from '../ui/cards/galleryCard';
 
-
 const GalleryTwo = ({ text_muted, bg_muted }) => {
-    const pagination = {
-        clickable: true,
-        el: ".progressbar-pagination",
-        type: 'progressbar'
-    };
     return (
         <section className='pt-20'>
             <div className='container-fluid'>
@@ -47,16 +39,30 @@ const GalleryTwo = ({ text_muted, bg_muted }) => {
                                 slidesPerView: 3
                             }
                         }}
-                        pagination={pagination}
                         loop={true}
-                        modules={[Pagination, Navigation]}
+                        modules={[Navigation,Autoplay]}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         className=''
                     >
                         {
-                            galleryData.map(({ id, img_title, img_desc, img,link }) => <SwiperSlide key={id}> <GalleryCard gallery_img={img} id={id} gallery_desc={img_desc} gallery_name={img_title} text_muted={text_muted}  link={link}/> </SwiperSlide>)
+                            galleryData.map(({ id, img_title, img_desc, img, link }) => (
+                                <SwiperSlide key={id}>
+                                    <GalleryCard 
+                                        gallery_img={img} 
+                                        id={id} 
+                                        gallery_desc={img_desc} 
+                                        gallery_name={img_title} 
+                                        text_muted={text_muted} 
+                                        link={link}
+                                    />
+                                </SwiperSlide>
+                            ))
                         }
                         <div className='container'>
-                            <ProgressAndNatigation />
+                            <ProgressAndNavigationTwo totalSlides={galleryData.length} />
                         </div>
                     </Swiper>
                 </div>
